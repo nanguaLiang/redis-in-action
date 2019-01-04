@@ -24,3 +24,5 @@ func UpdateToken(conn redis.Conn,token string,user string,item string){
 		conn.Do("ZREMRANGEBYRANK",fmt.Sprintf("viewed:%s",token),0,-26)
 	}
 }
+
+//2.2
